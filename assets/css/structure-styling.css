@@ -1,0 +1,52 @@
+/*900, 700, 400
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+/* GLOBAL */
+* {
+    font-family: 'Inter';
+    font-family: 'Gloock';
+    color: white;
+    text-transform: uppercase;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: #e8e6e3;
+}
+
+body {
+    background-color: #5f363f;
+    margin: 0;
+    padding: 0;
+}
+div.main-container {
+    width: 100%;
+    min-height: 100vh;          /*the following 3 tags are REQUIRED*/
+    display: flex;              /*for the actual structure of the page*/
+    flex-direction: column;     /*placing the header, section and footer*/
+}
+/* END OF GLOBAL */
+
+
+
+/* SECTION */
+section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;/*
+    background-image: url('/assets/images/background/porsche-cup/season1/spa/spa4.jpg');*/
+}
+section h1 {
+    font-size: 3.5em;
+    width: 100%;
+    text-align: center;
+    margin: .67em 0;
+}
+/* END OF SECTION */
