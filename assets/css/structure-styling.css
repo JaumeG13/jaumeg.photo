@@ -4,10 +4,10 @@
 
 /* GLOBAL */
 * {
-    font-family: 'Inter';
+    /*font-family: 'Inter';*/
     font-family: 'Gloock';
-    color: white;
-    text-transform: uppercase;
+    color: #000000;
+    /*text-transform: uppercase;*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
@@ -18,11 +18,11 @@ html {
 }
 a {
     text-decoration: none;
-    color: #e8e6e3;
+    color: #000000;
 }
 
 body {
-    background-color: #5f363f;
+    background-color: #F2F1EC;
     margin: 0;
     padding: 0;
 }
@@ -41,7 +41,7 @@ section {
     flex-grow: 1;
     display: flex;
     justify-content: space-evenly;/*
-    background-image: url('/assets/images/background/porsche-cup/season1/spa/spa4.jpg');*/
+    background-image: url('/assets/images/background/.jpg');*/
 }
 section h1 {
     font-size: 3.5em;
