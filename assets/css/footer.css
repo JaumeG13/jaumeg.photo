@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2em;
+    gap: 1em;
+    border-top: #000000 1px solid;
+    padding: 2em;
+}
+div.name {
+    font-size: 1.5em;
+}
+div.links {
+    display: flex;
+    gap: 2em;
+    text-decoration: underline;
+}
