@@ -8,10 +8,10 @@ div.main-image {
     background-size: cover;
     background-repeat: no-repeat;/*
     background-attachment: fixed;
-    background-position-x: 50%;
-    background-position-y: 100%;*/
+    background-position-x: 50%;*/
+    background-position-y: 60%;
     width: 85%;
-    height: 100vh;
+    height: 80vh;
     margin-top: 5em;
 }
 div.text {
