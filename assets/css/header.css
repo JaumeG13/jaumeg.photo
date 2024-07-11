@@ -46,6 +46,7 @@ label[for=switch]:after {
 	background: #fff;
 	border-radius: 1em;
 	transition: 0.3s;
+    z-index: 2;
 }
 input:checked + label {
 	background: #d8d5c5;
@@ -55,7 +56,20 @@ input:checked + label:after {
 	transform: translateX(-95%);
 }
 label:active:after {
-	width: 65x;
+	width: 65px;
+}
+.menu img {
+    position: absolute;
+    width: 1.4em;
+    top: 0.6em;
+    z-index: 1;
+	border-radius: 1em;
+}
+.flag-es {
+    left: 1.1em;
+}
+.flag-gb {
+    right: 0.95em;
 }
 
 /* End of language switch */
@@ -68,6 +82,7 @@ label:active:after {
 .menu li {
     display: flex;
     padding: 7px 15px;
+    position: relative;
 }
 .menu a {
     display: block;
