@@ -19,3 +19,6 @@ div.text {
     padding: 2em;
     display: block;
 }
+.esp {  /*hide spanish span by default*/
+    display: none;
+}

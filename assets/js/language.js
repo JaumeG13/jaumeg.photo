@@ -1,18 +1,20 @@
+var checkbox = document.getElementById('switch');
+var espanol = document.getElementsByClassName('esp');
+var english = document.getElementsByClassName('eng');
+
 function setDefault() {
-    document.getElementById('eng').style.display = 'none';
-    document.getElementById('esp').style.display = 'none';
+    english.style.display = 'block';
+    espanol.style.display = 'block';
 }
 
 function toggleLanguage() {
-    if(document.getElementById('switch').checked = true) {
+    if(checkbox.checked === true) {
         setDefault();
-        document.getElementById('eng').style.display = 'none';
-        document.getElementById('esp').style.display = 'block';
-    }
-
-    if(document.getElementById('switch').checked = false) {
+        english.style.display = 'none';
+    } else {
         setDefault();
-        document.getElementById('eng').style.display = 'block';
-        document.getElementById('esp').style.display = 'none';
+        espanol.style.display = 'none';
     }
 }
+
+checkbox.addEventListener('change', toggleLanguage);

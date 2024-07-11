@@ -19,32 +19,32 @@ nav {
     height: 100%;
 }
 
+/* Language switch */
 
-/*
-input[type=checkbox]{
+input#switch{
 	height: 0;
 	width: 0;
 	visibility: hidden;
 }
-label {
+label[for=switch] {
 	cursor: pointer;
 	text-indent: -9999px;
 	width: 3.5em;
-	height: 1.75em;
+	height: 1.5em;
 	background: #d8d5c5;
 	display: block;
-	border-radius: 4em;
+	border-radius: 1em;
 	position: relative;
 }
-label:after {
+label[for=switch]:after {
 	content: '';
 	position: absolute;
-	top: 5px;
-	left: 5px;
+	top: 0.15em;
+	left: 0.15em;
 	width: 1.5em;
-	height: 1.5em;
+	height: 1.22em;
 	background: #fff;
-	border-radius: 45px;
+	border-radius: 1em;
 	transition: 0.3s;
 }
 input:checked + label {
@@ -52,24 +52,28 @@ input:checked + label {
 }
 input:checked + label:after {
 	left: calc(100% - 5px);
-	transform: translateX(-100%);
+	transform: translateX(-95%);
 }
 label:active:after {
 	width: 65x;
 }
-*/
 
+/* End of language switch */
 
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.menu li {
+    display: flex;
+    padding: 7px 15px;
+}
 .menu a {
     display: block;
-    padding: 7px 15px;
     font-weight: 500;
     transition: 0.2s all ease-in-out;
+    text-decoration: none;
 }
 .menu a:hover {
     opacity: 1;
@@ -88,10 +92,10 @@ label:active:after {
 @media only screen and (max-width: 780px) {
     .menu {
         flex-direction: column;
-        background-color: #0a0705;
+        background-color: #F2F1EC;
         align-items: start;
         position: absolute;
-        top: 10vh;
+        top: 15vh;
         left: 0;
         width: 100%;
         z-index: 1;
@@ -100,11 +104,14 @@ label:active:after {
         transition: transform 0.3s ease-in-out;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
+    label[for=switch] {
+        padding-left: 27px;
+    }
     .menu a {
         padding-left: 27px;
     }
     .menu a:hover {
-        background-color: #b03650;
+        background-color: #d8d5c5;
         color: white;
     }
     .menu li {
@@ -112,12 +119,12 @@ label:active:after {
         width: 100%;
     }
     .menu li:hover {
-        background-color: #b03650;
+        background-color: #d8d5c5;
     }
     .menu-icon {
         display: block;
         color: #000000;
-        font-size: 28px;
+        font-size: 2em;
         cursor: pointer;
     }
 }
