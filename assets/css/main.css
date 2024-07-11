@@ -4,7 +4,7 @@ section.index {
     align-items: center;
 }
 div.main-image {
-    background-image: url('/assets/images/IMG_4117-2-medio.png');
+    background-image: url('/assets/images/IMG_4117-2-medio.png'), url('');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
