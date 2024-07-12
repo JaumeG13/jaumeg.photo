@@ -14,6 +14,7 @@ div.main-image {
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 90%;
+    border-radius: 5px;
 }
 div.text {
     font-size: 2em;
@@ -34,12 +35,15 @@ div.images-block {
     width: 100%;
     height: 65vh;
 }
+div.images-block div {
+    border-radius: 5px;
+}
 div.block-1 {
     width: 100%;
     background-image: url('/assets/images/civic/IMG_4908.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 75%;
+    background-position-x: 40%;
 }
 div.block-2 {
     width: 100%;
@@ -49,3 +53,47 @@ div.block-2 {
 }
 
 
+div.see-more {
+    width: 100%;
+    padding: 5em 0;
+}
+div.see-more h1 {
+    font-size: 2.6em;
+}
+div.see-more p {
+    font-size: 1.6em;
+}
+div.see-more a {
+    text-decoration: underline;
+}
+
+
+div.images-block-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1em;
+    width: 100%;
+    height: 65vh;
+}
+div.images-block-2 div {
+    border-radius: 5px;
+}
+div.block-3 {
+    width: 100%;
+    background-image: url('/assets/images/civic/IMG_4919.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.block-4 {
+    width: 100%;
+    background-image: url('/assets/images/IMG_3100.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+}
+div.block-5 {
+    width: 100%;
+    background-image: url('/assets/images/IMG_2633.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
