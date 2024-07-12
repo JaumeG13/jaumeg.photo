@@ -2,52 +2,50 @@ section.index {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-div.front-page {
-    position: relative;
-    width: 85%;
-    height: 80vh;
-    margin-top: 5em;
-}
-div.front-page div {
     width: 100%;
-    height: 100%;
-}
-div.foreground {
-    position: absolute;
-    z-index: 3;
-    background-image: url('/assets/images/Supra-Foreground.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: 50%;
-    background-position-y: 90%;
-}
-div.front-page-text {
-    position: absolute;
-    z-index: 2;
-    background-image: url('/assets/images/Supra-text.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: 50%;
-    background-position-y: 90%;
+    padding: 5em 7%;
 }
 div.main-image {
-    margin-top: 5em;
+    width: 100%;
+    height: 80vh;
     z-index: 1;
-    background-image: url('/assets/images/Supra.jpg');
+    background-image: url('/assets/images/supra/Supra.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 90%;
 }
 div.text {
     font-size: 2em;
-    padding: 2em;
+    padding: 2em 0 5em 0;
+    margin-left: -10%;
     display: block;
+    width: 90%;
 }
 .esp {  /*hide spanish span by default*/
     display: none;
 }
+
+
+div.images-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    width: 100%;
+    height: 65vh;
+}
+div.block-1 {
+    width: 100%;
+    background-image: url('/assets/images/civic/IMG_4908.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+}
+div.block-2 {
+    width: 100%;
+    background-image: url('/assets/images/civic/IMG_4909.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
