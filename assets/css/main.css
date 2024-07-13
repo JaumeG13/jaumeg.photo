@@ -7,13 +7,13 @@ section.index {
 }
 div.main-image {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     z-index: 1;
-    background-image: url('/assets/images/supra/Supra.jpg');
+    background-image: url('/assets/images/supra/supramk3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
-    background-position-y: 90%;
+    background-position-y: 70%;
     border-radius: 5px;
 }
 div.text {
@@ -30,7 +30,7 @@ div.text {
 
 div.images-block {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 1em;
     width: 100%;
     height: 65vh;
@@ -40,14 +40,14 @@ div.images-block div {
 }
 div.block-1 {
     width: 100%;
-    background-image: url('/assets/images/civic/IMG_4908.jpg');
+    background-image: url('/assets/images/civic/vtec-engine.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 40%;
 }
 div.block-2 {
     width: 100%;
-    background-image: url('/assets/images/civic/IMG_4909.jpg');
+    background-image: url('/assets/images/civic/civic-rim.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -70,7 +70,7 @@ div.see-more a {
 
 div.images-block-2 {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
     width: 100%;
     height: 65vh;
@@ -80,20 +80,20 @@ div.images-block-2 div {
 }
 div.block-3 {
     width: 100%;
-    background-image: url('/assets/images/civic/IMG_4919.jpg');
+    background-image: url('/assets/images/civic/interior.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 div.block-4 {
     width: 100%;
-    background-image: url('/assets/images/IMG_3100.jpg');
+    background-image: url('/assets/images/GT3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 40%;
 }
 div.block-5 {
     width: 100%;
-    background-image: url('/assets/images/IMG_2633.jpg');
+    background-image: url('/assets/images/GT3-Cup.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
