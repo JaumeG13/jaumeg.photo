@@ -18,7 +18,7 @@ div.main-image {
 }
 div.text {
     font-size: 2em;
-    padding: 2em 0 5em 0;
+    padding: 3.5em 0;
     margin-left: -10%;
     display: block;
     width: 90%;
@@ -26,6 +26,7 @@ div.text {
 .esp {  /*hide spanish span by default*/
     display: none;
 }
+
 
 
 div.images-block {
@@ -40,17 +41,26 @@ div.images-block div {
 }
 div.block-1 {
     width: 100%;
-    background-image: url('/assets/images/civic/vtec-engine.jpg');
+    background-image: url('/assets/images/civic/interior.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+div.block-2 {
+    width: 100%;
+    background-image: url('/assets/images/GT3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 40%;
 }
-div.block-2 {
+div.block-3 {
     width: 100%;
-    background-image: url('/assets/images/civic/civic-rim.jpg');
+    background-image: url('/assets/images/GT3-Cup.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: 50%;
 }
+
 
 
 div.see-more {
@@ -68,6 +78,7 @@ div.see-more a {
 }
 
 
+
 div.images-block-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -78,22 +89,70 @@ div.images-block-2 {
 div.images-block-2 div {
     border-radius: 5px;
 }
-div.block-3 {
-    width: 100%;
-    background-image: url('/assets/images/civic/interior.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 div.block-4 {
     width: 100%;
-    background-image: url('/assets/images/GT3.jpg');
+    background-image: url('/assets/images/civic/vtec-engine.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 40%;
 }
 div.block-5 {
     width: 100%;
-    background-image: url('/assets/images/GT3-Cup.jpg');
+    background-image: url('/assets/images/civic/civic-rim.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    section.index {
+        width: 100%;
+        padding: 2em 7%;
+    }
+    div.main-image {
+        width: 100%;
+        height: 30vh;
+    }
+    div.text {
+        font-size: 1.5em;
+        padding: 1em 0;
+    }
+    
+
+    
+    div.images-block {
+        grid-template-columns: 1fr;
+        height: 150vh;
+    }
+    div.block-1 {
+        height: 60vh;
+        background-position-x: 50%;
+    }
+    div.block-2 {
+        width: 100%;
+        height: 25vh;
+        background-position-x: 20%;
+    }
+    div.block-3 {
+        height: 60vh;
+        width: 100%;
+        background-position-x: 50%;
+    }
+    
+    
+
+    div.see-more {
+        width: 100%;
+        padding: 2em 0;
+    }
+    
+    
+
+    div.images-block-2 {
+        grid-template-columns: 1fr;
+    }
 }

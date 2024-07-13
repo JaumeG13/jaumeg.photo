@@ -20,3 +20,12 @@ div.links {
 footer i {
     font-size: 1.6em;
 }
+
+@media screen and (max-width: 950px) {
+    div.name {
+        font-size: 1.25em;
+    }
+    div.links {
+        gap: 1em;
+    }
+}
