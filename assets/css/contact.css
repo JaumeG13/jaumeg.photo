@@ -1,0 +1,49 @@
+section.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5em;
+}
+div.contact-image {
+    width: 100%;
+    background-image: url('/assets/images/992-GT3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+div.contact-info {
+    font-size: 1.6em;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    align-items: center;
+    height: 30%;
+}
+div.contact-info i, div.contact-info a {
+    text-align: center;
+}
+
+
+
+
+
+
+/*
+div.contact-info {
+    font-size: 1.6em;
+    display: flex;
+}
+
+
+
+
+
+div.contact-icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+    gap: 10px;
+}
+div.contact-text {
+    
+    gap: 10px;
+}
