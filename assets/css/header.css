@@ -10,6 +10,7 @@
     padding: 2em;
     font-size: 1.6em;
     border-bottom: #000000 1px solid;
+    background-color: #F2F1EC;
 }
 nav {
     display: flex;
