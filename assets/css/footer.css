@@ -17,3 +17,6 @@ div.links {
     gap: 2em;
     text-decoration: underline;
 }
+footer i {
+    font-size: 1.6em;
+}
