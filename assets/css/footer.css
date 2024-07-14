@@ -26,6 +26,6 @@ footer i {
         font-size: 1.25em;
     }
     div.links {
-        gap: 1em;
+        gap: 0.5em;
     }
 }
