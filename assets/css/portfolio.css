@@ -1,0 +1,23 @@
+section.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2.5em 18em;
+    gap: 1em;
+}
+section.portfolio > div {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.portfolio-item-1 {
+    background-image: url('/assets/images/992-GT3.jpg');
+}
+div.portfolio-item-2 {
+    background-image: url('/assets/images/Aerodeck.jpg');
+}
+div.portfolio-item-3 {
+    background-image: url('/assets/images/Ginetta.jpg');
+}
+div.portfolio-item-4 {
+    background-image: url('/assets/images/Peugeots.jpg');
+}
