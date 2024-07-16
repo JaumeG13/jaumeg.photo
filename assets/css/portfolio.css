@@ -1,3 +1,6 @@
+header ul.menu li.portfolio {
+    text-decoration: underline;
+}
 section.portfolio {
     display: flex;
     flex-direction: row;
