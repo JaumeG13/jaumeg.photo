@@ -1,7 +1,7 @@
 section.portfolio {
     display: flex;
     flex-direction: row;
-    margin: 2.5em 18em;
+    margin: 2.5em 12em;
 }
 div.portfolio-column {
     width: 100%;
