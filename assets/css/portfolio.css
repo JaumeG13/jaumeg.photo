@@ -9,6 +9,7 @@ div.portfolio-column {
 section.portfolio img {
     display: block;
     width: 100%;
+    height: auto;
     padding: 5px;
     border-radius: 8px;
 }
