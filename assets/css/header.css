@@ -39,21 +39,22 @@ label[for=switch] {
 label[for=switch]:after {
 	content: '';
 	position: absolute;
-	top: 0.15em;
-	left: 0.15em;
-	width: 1.5em;
-	height: 1.22em;
+	top: 0.28em;
+	left: 0.2em;
+	width: 1.4em;
+	height: 0.94em;
 	background: #fff;
-	border-radius: 1em;
+	border-radius: 0.45em;
 	transition: 0.3s;
-    z-index: 2;
+    z-index: 1;
+    opacity: 0.75;
 }
 input:checked + label {
 	background: #d8d5c5;
 }
 input:checked + label:after {
 	left: calc(100% - 5px);
-	transform: translateX(-95%);
+	transform: translateX(-98.5%);
 }
 label:active:after {
 	width: 65px;
@@ -69,7 +70,7 @@ label:active:after {
     left: 0.2em;
 }
 .flag-gb {
-    right: 0.2em;
+    right: 0.17em;
 }
 
 /* End of language switch */
