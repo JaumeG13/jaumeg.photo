@@ -43,28 +43,24 @@
                 <a href="https://www.instagram.com/jaumeg.photo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <p>jaumeg.photo</p>
 
-
-                <!--<div class="contact-icons">
-                    <i class="fa-solid fa-map-pin"></i>
-                    <a href="mailto:jaumegenaro.photography@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/jaumeg.photo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-
-                <div class="contact-text">
-                    <span class="esp">Provincia de Málaga</span><span class="eng">Malaga province</span>
-                    <p>jaumegenaro.photography@gmail.com</p>
-                    <p>jaumeg.photo</p>
-                </div>
-                
-                <span class="esp">
-                    <p><i class="fa-solid fa-map-pin"></i>&nbsp;&nbsp;Provincia de Málaga</p>
-                    <p><a href="mailto:jaumegenaro.photography@gmail.com"><i class="fa-regular fa-envelope"></i></a>&nbsp;&nbsp;jaumegenaro.photography@gmail.com</p>
-                    <p><a href="https://www.instagram.com/jaumeg.photo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;jaumeg.photo</p>
-                </span>      -->        
-            </div>
+                <form
+                action="https://formspree.io/f/xblrzpln"
+                method="POST"
+                >
+                    <label>
+                        <span class="esp">Su correo:</span><span class="eng">Your email:</span>
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        <span class="esp">Mensaje:</span><span class="eng">Your message:</span>
+                        <textarea name="message"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit"><span class="esp">Enviar</span><span class="eng">Send</span></button>
+                </form>
         </section>
 
-        <div id="footer"></div>
+        <div id="footer" style="display: none;"></div>
     </div>
 </body>
 </html>
