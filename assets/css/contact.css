@@ -3,15 +3,17 @@ header ul.menu li.contact {
 }
 section.contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 5em;
 }
 div.contact-image {
     width: 100%;
-    background-image: url('/assets/images/720p/burriana/992-GT3-720.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: 50%;
+}
+div.contact-image img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: middle;
 }
 div.contact-info {
     font-size: 1.6em;
