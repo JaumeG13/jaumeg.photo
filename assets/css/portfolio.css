@@ -9,29 +9,6 @@ section.portfolio {
 div.portfolio-column {
     width: 100%;
 }
-
-/* Hover text links */
-div.portfolio-column a {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-span.hover-text {
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 150px;
-}
-div.portfolio-column a:hover span.hover-text {
-    display: block;
-}
-div.portfolio-column img {
-    transition: 250ms ease-in-out;
-}
-div.portfolio-column a:hover img {
-    filter: blur(2px);
-}
 section.portfolio img {
     display: block;
     width: 100%;
