@@ -3,14 +3,70 @@ header ul.menu li.contact {
 }
 section.contact {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 3.5em;
-}/*
+    grid-template-columns: 1fr 3fr;
+    margin: 3.5em 3.5em 3.5em 0;
+}
 div.info-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}*/
+    font-size: 1.25em;
+    align-items: center;
+    padding: 0 2em;
+}
+div.contact-title {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+div.form-container {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    min-height: 8vh;
+    resize: vertical;
+}
+button {
+    margin-top: 10px;
+    width: 25%;
+}
+div.contact-info {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+div.contact-info i, div.contact-info a {
+    text-align: center;
+}
+div.contact-image {
+    width: 100%;
+    height: 70vh;
+    padding: 0 1em;
+}
+div.contact-image img {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: middle;
+    border-radius: 5px;
+}
+/*
+
+div.info-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 10%;
+}
 div.contact-title span {
     font-size: 2em;
     font-weight: 500;
@@ -20,9 +76,6 @@ div.contact-title span {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-form {
-    width: 80%;
 }
 label, textarea, input {
     width: 100%;
@@ -38,12 +91,14 @@ input {
 }
 div.contact-info {
     font-size: 1.6em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    display: flex;
+    width: 100%;
 }
-div.contact-info i, div.contact-info a {
-    text-align: center;
+div.contact-info-left {
+    width: 20%;
+}
+div.contact-info-right {
+    width: 80%;
 }
 
 div.contact-image {
@@ -59,39 +114,4 @@ div.contact-image img {
     object-fit: cover;
     object-position: middle;
     border-radius: 5px;
-}
-
-
-
-
-/*
-
-
-
-
-
-
-
-
-
-/*
-div.contact-info {
-    font-size: 1.6em;
-    display: flex;
-}
-
-
-
-
-
-div.contact-icons {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 10px;
-    gap: 10px;
-}
-div.contact-text {
-    
-    gap: 10px;
 }
