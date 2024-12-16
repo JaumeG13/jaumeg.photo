@@ -16,3 +16,14 @@ section.portfolio img {
     padding: 5px;
     border-radius: 8px;
 }
+
+
+
+
+@media screen and (max-width: 950px) {
+    section.portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1em 1em;
+    }
+}
