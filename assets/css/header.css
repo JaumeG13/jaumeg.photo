@@ -18,9 +18,36 @@ nav {
     align-items: center;
     height: 100%;
 }
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li {
+    display: flex;
+    padding: 7px 15px;
+    position: relative;
+}
+.menu a {
+    display: block;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+}
+.menu a:hover {
+    opacity: 1;
+}
+.menu-icon {
+    display: none;
+    padding-right: 25px;
+}
+#menu-toggle {
+    display: none;
+}
+#menu-toggle:checked ~ .menu {
+    transform: scale(1, 1);
+}
 
 /* Language switch */
-
 input#switch {
 	height: 0;
 	width: 0;
@@ -81,39 +108,64 @@ input#switch:checked ~ label .flag-es {
 input#switch:checked ~ label .flag-gb {
     opacity: 0.15;
 }
-
 /* End of language switch */
 
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu li {
-    display: flex;
-    padding: 7px 15px;
-    position: relative;
-}
-.menu a {
-    display: block;
-    font-weight: 500;
-    transition: 0.2s all ease-in-out;
-}
-.menu a:hover {
-    opacity: 1;
-}
-.menu-icon {
-    display: none;
-    padding-right: 25px;
-}
-#menu-toggle {
-    display: none;
-}
-#menu-toggle:checked ~ .menu {
-    transform: scale(1, 1);
-}
+
 
 @media only screen and (max-width: 780px) {
+    /*.menu {
+        flex-direction: column;
+        background-color: #F2F1EC;
+        align-items: start;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    label[for=switch] {
+        padding-left: 27px;
+    }
+    .menu a {
+        padding-left: 27px;
+    }
+    .menu a:hover {
+        background-color: #d8d5c5;
+        color: white;
+    }
+    .menu li {
+        padding: 15px 0; /*increase for horizontal separation between buttons
+        width: 100%;
+    }
+    .menu li:hover {
+        background-color: #d8d5c5;
+    }
+    .menu-icon {
+        display: block;
+        color: #000000;
+        font-size: 1.5em;
+        cursor: pointer;
+    }*/
+
+    
+    .header {
+        width: 100%;
+        height: 15vh;
+        padding: 2em 1em;
+        font-size: 1.6em;
+        border-bottom: #000000 1px solid;
+        background-color: #F2F1EC;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
     .menu {
         flex-direction: column;
         background-color: #F2F1EC;
@@ -148,7 +200,20 @@ input#switch:checked ~ label .flag-gb {
     .menu-icon {
         display: block;
         color: #000000;
-        font-size: 2em;
+        font-size: 1.5em;
         cursor: pointer;
+        padding: 0;
     }
+    
+    /* Language switch */
+    li.language {
+        padding-left: 1em;
+    }
+    input:checked + label {
+        background: none;
+    }
+    li.language:hover input + label {
+        background-color: #F2F1EC;
+    }
+    /* End of language switch */
 }
