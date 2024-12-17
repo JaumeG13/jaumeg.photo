@@ -20,6 +20,11 @@ section.portfolio img {
 
 
 
+@media screen and (max-width: 1400px) {
+    section.portfolio {
+        margin: 2.5em 2.5em;
+    }
+}
 @media screen and (max-width: 950px) {
     section.portfolio {
         display: grid;
