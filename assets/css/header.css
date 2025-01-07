@@ -212,6 +212,9 @@ input#switch:checked ~ label .flag-gb {
     input:checked + label {
         background: none;
     }
+    li.language input + label {
+        background-color: #d8d5c5;
+    }
     li.language:hover input + label {
         background-color: #F2F1EC;
     }
