@@ -7,7 +7,7 @@ section.contact {
     grid-template-columns: 1fr 1fr;
     padding: 3em 20em;
     gap: 1em;
-    
+    height: 85vh;    
 }
 div.contact-image {
     grid-column: span 2;
@@ -32,8 +32,11 @@ div.contact-info {
     height: fit-content;
 }
 div.contact-info a {
-    display: block;
     text-align: left;
+}
+div.contact-info a:hover {
+    color: #800020;
+    text-decoration: underline;
 }
 
 
@@ -52,9 +55,46 @@ input {
 textarea {
     width: 100%;
     min-height: 8vh;
+    max-height: 12vh;
     resize: vertical;
 }
 button {
     margin-top: 10px;
     width: 25%;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1450px) {
+    section.contact {
+        display: grid;
+        grid-template-rows: 1.5fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 3em 10em;
+        gap: 1em;
+        height: 85vh;    
+    }
+}
+
+@media screen and (max-width: 950px) {
+    section.contact {
+        display: grid;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        gap: 1em;
+    }
+    div.contact-image {
+        grid-column: span 1;
+        height: 40vh;
+    }
+    
+    div.contact-info {
+        font-size: 1.1em;
+    }
+    
+    button {
+        width: 100%;
+    }
 }
