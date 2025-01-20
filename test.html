@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Modal for Multiple Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+        img {
+            cursor: pointer;
+            width: 350px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .modal-content {
+            margin: 10% auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img loading="lazy" src="/assets/images/720p/seat.webp" alt="Old Seat">
+    <img loading="lazy" src="/assets/images/720p/Aerodeck-720.webp" alt="Honda Accord Aerodeck">
+    <img loading="lazy" src="/assets/images/720p/scirocco-exhaust.webp" alt="Volkswagen Scirocco exhaust tips closeup">
+    <img loading="lazy" src="/assets/images/720p/Renault-720.webp" alt="Renault Megane driving on track">
+    <img loading="lazy" src="/assets/images/720p/puma-720.webp" alt="Ford Puma mk2 in a parking garage">
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Large View">
+    </div>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+
+        // Add click event to all images
+        document.querySelectorAll("img").forEach(image => {
+            image.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImage.src = image.src; // Use clicked image's source
+            });
+        });
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside the image
+        modal.addEventListener("click", (e) => {
+            if (e.target !== modalImage) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
