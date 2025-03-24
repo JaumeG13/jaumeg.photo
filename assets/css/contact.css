@@ -3,7 +3,7 @@ header ul.menu li.contact {
 }
 section.contact {
     display: grid;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     padding: 3em 20em;
     gap: 1em;
